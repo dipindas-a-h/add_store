@@ -1,0 +1,13 @@
+.nav{
+    height: 7vh;
+    background-color: black;
+}
+.logo{
+    color: azure;
+    /* background-color: aqua; */
+    height: 7vh;
+    font-size: 2vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    /* padding-top: 1vh; */
+}
