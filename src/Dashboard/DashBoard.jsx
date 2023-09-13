@@ -8,6 +8,8 @@ import {
 } from '@ant-design/icons';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 import AddPlans from '../Pages/Plans/AddPlans';
+import { useNavigate } from 'react-router-dom';
+import Routes from '../Routes/Routes';
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -38,6 +40,8 @@ const items = [
 
 const DashBoard = () => {
   const [collapsed, setCollapsed] = useState(false);
+
+  const navigate = useNavigate()
   const {
     token: { colorBgContainer },
   } = theme.useToken();
@@ -47,7 +51,16 @@ const DashBoard = () => {
 
   const handleMenuItemClick = (item) => {
     // Handle the click event for the menu item here
-    console.log(`Clicked on item: ${item.key}`);
+    console.log(`Clicked on item: ${item.key}, `);
+    console.log("cc",item?.key);
+
+
+    if (item?.key == 2) {
+      navigate(`${Routes.ADD_PLAN}`)
+      console.log("ccc");
+      
+      
+    }
     // You can perform any actions you need based on the clicked item.
   };
 

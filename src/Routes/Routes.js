@@ -1,5 +1,9 @@
 const Routes={
-    HOME: "/home"
+    HOME: "/home",
+    ADD_PLAN: "/add_plan",
+
+
+
     
 };
 export default Routes;

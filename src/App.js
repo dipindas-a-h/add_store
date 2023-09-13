@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Register from './auth/register/register';
 import DashBoard from './Dashboard/DashBoard';
 import ROUTES from './Routes/Routes';
+import AddPlans from './Pages/Plans/AddPlans';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
 
 
           <Route path={ROUTES.HOME} element={<DashBoard />} />
+          <Route path={ROUTES.ADD_PLAN} element={<AddPlans/>}/>
 
         </Routes>
       </BrowserRouter>
