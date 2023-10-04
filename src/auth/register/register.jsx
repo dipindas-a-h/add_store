@@ -9,11 +9,13 @@ import { useNavigate } from 'react-router-dom';
 import ROUTES from '../../Routes/Routes';
 import axios from 'axios';
 import base_url_auth from '../../API/Api';
+import api from '../../API/Api';
 
 function Register() {
   const navigate = useNavigate();
 
   const url = 'http://localhost:8000/users/login';
+  console.log("ir",api.base);
 
   const [alert, setAlert] = useState(false);
 
@@ -70,6 +72,8 @@ function Register() {
           onFinish={(value) => {
             console.log("value", value);
             handleLogin(value)
+            navigate(`${ROUTES.HOME}`)
+
           }}
         >
           <Form.Item
