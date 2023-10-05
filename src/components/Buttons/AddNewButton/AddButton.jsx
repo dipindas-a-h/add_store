@@ -5,7 +5,7 @@ import "./addbutton.css"
 function AddButton({label}) {
   return (
     <div>
-        <Button className='btn'>
+        <Button className='btn' style={{ color: 'white'}}>
 {label}
         </Button>
     </div>
