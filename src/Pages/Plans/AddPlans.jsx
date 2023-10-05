@@ -10,7 +10,7 @@ function AddPlans() {
 
       {/* <DashBoard>      */}
 <SubHeading heading={"Plans"}/>     
-<div className="col-12 d-flex justify-content-end"> <AddButton label={"ADD PLAN"}/></div> 
+<div className="col-12 d-flex justify-content-end mt-3"> <AddButton label={"ADD PLAN"}/></div> 
       {/* </DashBoard> */}
  
       </div>

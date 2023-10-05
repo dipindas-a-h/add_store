@@ -80,6 +80,7 @@ const App = () => {
           width: '100%',
           display: 'flex',
           alignItems: 'center',
+          position: 'fixed'
         }}
       >
         <div className="demo-logo" />
