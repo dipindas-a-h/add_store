@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SubHeading from '../../components/SubHeading/SubHeading';
 import AddButton from '../../components/Buttons/AddNewButton/AddButton';
 import { Table } from 'antd';
+import Models from '../../components/Models/Models';
 
 function AddPlans() {
+
+  const [model,setModel] = useState(false);
+
+
   const columns = [
     {
       title: "SI No.",
@@ -52,7 +57,7 @@ function AddPlans() {
     <div>
       <SubHeading heading={"Plans"} />
       <div className="col-12 d-flex justify-content-end mt-3">
-        <AddButton label={"ADD PLAN"} />
+        <AddButton label={"ADD PLAN"}/>
       </div>
       <div className="col-12 mt-3">
         <Table
@@ -63,6 +68,7 @@ function AddPlans() {
           bordered
         />
       </div>
+      <Models isModalOpen={ model}/>
     </div>
   );
 }
