@@ -4,6 +4,7 @@ import Register from './auth/register/register';
 import ROUTES from './Routes/Routes';
 import AddPlans from './Pages/Plans/AddPlans';
 import NewDashBoard from './Dashboard/NewDashBoard';
+import './components/Buttons/AddNewButton/addbutton.css'
 
 function App() {
   return (
